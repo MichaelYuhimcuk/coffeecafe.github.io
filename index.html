@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Кав'ярня</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Lucida Handwriting, cursive;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #997f70;
+    color: #fff;
+}
+.navbar {
+    background-color: #736156;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 10px;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding: 10px;
+}
+
+.main-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news {
+    background-color: #d1c0b6;
+    padding: 20px;
+    height: 250px;
+}
+.footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #997f70;
+    color: #fff;
+}
+
+.footer-col {
+    text-align: center;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.slider {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-color: #d1c0b6;
+}
+
+.slide {
+    animation: slide 6s infinite;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 200px;
+}
+
+@keyframes slide {
+    0%, 33% { transform: translateX(0); }
+    34%, 66% { transform: translateX(-100%); }
+    67%, 100% { transform: translateX(-200%); }
+}
+</style>
+</head>
+<body>
+ <header class="header">
+  <div class="logo">Кав'ярня "THE.COFFEE.ART"</div> <img class="header2" src="https://eu-central-1.linodeobjects.com/list/production/449793/logo/thumb/6721f8ec282c8.png">
+  </header>
+  <nav class="navbar">
+        <ul class="menu">
+            <li><a href="index.html">Головна</a></li>
+            <li><a href="menu.html">Меню</a></li>
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="location.html">Локація</a></li>
+        </ul>
+    </nav>
+	<section id="home">
+        <div class="slider">
+            <div class="slide">Акція: -10% на капучино!</div>
+            <div class="slide">Знижка на десерти до 16:00!</div>
+            <div class="slide">Новинка: гарбузовий лате!</div>
+        </div>
+    </section>
+	<div class="container">
+	  <main class="main-content">
+	  <article class="news"><b>Ароматна кава, смачна випічка, десерти. Реалізація крафтових сирів з власної ферми. Продаж чаю та кави. Екскурсії на ферму та сироварню. Кінні прогулянки.</b></article>
+	  <article class="news"><b>Ароматна кава та смачні десерти в асортименті. Виготовлення на замовлення кондитерських виробів, випічки для святкування весіль, днів народження та інших урочистих подій. Проведення майстер-класів для дорослих і дітей.</b></article>
+	  <article class="news"><b>Виготовлення кондитерських виробів та випічки на замовлення. Курси кондитерів. Кейтеринг та створення кенді-барів. Продаж кави та чаю на вагу.</b></article>
+	  <article class="news"><b>Смачна кава, десерти, напої. Кондитерські вироби та авторська випічка на замовлення. Настільні ігри, жива музика.</b></article>
+	  </main>
+	  <aside class="sidebar">
+            <h2><font color="#a7a8a8"><align="center">Останні новини щодо кав'ярні</font></h2>
+            <ul>
+			<li>Повернувся з Києва і варить каву: як у Херсоні працює кав’ярня</li>
+			<li>"Зробили каву на безлактозному замість бананового": у Києві чоловік вдарив дівчину-баристу і "прикрився" роботою в КМДА (відео)</li>
+			<li>П'ять цікавих та веселих речей, які можна зробити з вантажним відсіком пікапа</li>
+			</ul>
+        </aside>
+    </div>
+	<footer class="footer">
+        <div class="footer-col">©2024 Roblox Corporation. Roblox, the Roblox logo and Powering Imagination are among our registered and unregistered trademarks in the U.S. and other countries.</div>
+    </footer>
+</body>
+</html>
